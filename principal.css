@@ -55,6 +55,9 @@ button {
       left: 0;
       right: 0;
       margin: auto;
+    border: solid;
+    border-color: #b8c6db;
+    border-radius: 8px;
   }
   
   .search-input {
@@ -119,11 +122,28 @@ button {
   */
 
   .producto {
-    width: 450px;
+    width: auto;
     position: relative;
     margin: 20px;
     border: solid;
     border-color: orange;
-    border-radius: 8px;;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: rgba(255, 166, 0, 0.64);
+  }
+  .imagen{
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border: solid;
+    border-color: orange;
   }
 
+.card-info{
+  background-color: white;
+  border: solid thin;
+  border-color: grey;
+  border-radius: 8px;
+  padding: 9px;
+}
