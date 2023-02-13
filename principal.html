@@ -20,7 +20,8 @@
 <body>
   <nav class="navbar">
     <div>
-      <img class="logo" src="/imagenes/logo2.svg">
+      <img class="logo" src="/imagenes/logo2.svg" alt="">
+      alt=""
     </div>
     <script src="https://kit.fontawesome.com/d97b87339f.js" crossorigin="anonymous"></script>
 
@@ -42,39 +43,57 @@
 
   <div class="container-fluid">
     <div class="row">
+
       <div class="col-md-3">
         <div class="sidebar">
           <h3>FILTROS</h3>
           <div class="checkbox-wrapper">
-            <input type="checkbox" id="check" checked>
-            <label for="check" class="checkmark"> >10€</label> <br>
+            <input type="checkbox" checked>
+            <label class="checkmark"> &lt; 10€</label> <br>
 
-            <input type="checkbox" id="check" checked>
-            <label for="check" class="checkmark">
-              <10€ </label> <br>
+            <input type="checkbox" checked>
+            <label class="checkmark">
+              &gt;10€ </label> <br>
 
-                <input type="checkbox" id="check" checked>
-                <label for="check" class="checkmark"> RPG</label> <br>
+            <input type="checkbox" checked>
+            <label class="checkmark"> RPG</label> <br>
 
-                <input type="checkbox" id="check" checked>
-                <label for="check" class="checkmark"> Deportes</label> <br>
+            <input type="checkbox" checked>
+            <label class="checkmark"> Deportes</label> <br>
 
-                <input type="checkbox" id="check" checked>
-                <label for="check" class="checkmark"> Accion</label> <br>
+            <input type="checkbox" checked>
+            <label class="checkmark"> Accion</label> <br>
 
-                <input type="checkbox" id="check" checked>
-                <label for="check" class="checkmark"> FG</label> <br> <br>
+            <input type="checkbox" checked>
+            <label class="checkmark"> FG</label> <br> <br>
 
-                <button class="button boton" onclick="">Aplicar filtros</button>
+            <button class="button boton" onclick="">Aplicar filtros</button>
           </div>
         </div>
       </div>
+
       <div class="col-md-9">
         <div class="row">
+
           <div class="col-md-4">
             <div class="producto">
               <div class="imagen">
-                <img class="juego" src="imagenes/toystory.jpg" />
+                <img class="juego" src="imagenes/spiderman.jpeg" alt="">
+              </div>
+              <div class="card-info">
+                <h4>Spiderman ps5</h4>
+                <h5> 20€ </h5>
+                <div> Mi hijo ya no usa el juego y quiero venderlo</div>
+                <button class="button boton" onclick="location.href='login.html'">Contactar</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="producto">
+              <div class="imagen">
+                <img class="juego" src="imagenes/triangle.jpg" alt="">
               </div>
               <div class="card-info">
                 <h4>Triangle Strategy</h4>
@@ -87,144 +106,156 @@
 
 
           <div class="col-md-4">
-
             <div class="producto">
               <div class="imagen">
-                <img class="juego" src="imagenes/triangle.jpg" />
+                <img class="juego" src="imagenes/monster.jpg" alt="">
               </div>
               <div class="card-info">
-                <h4>Triangle Strategy</h4>
-                <h5> 15€ </h5>
-                <div> Esta en buen estado solo lleva abierto 2 meses</div>
-                <button class="button boton" onclick="location.href='login.html'">Contactar</button>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-4">
-            <div class="producto">
-              <div class="imagen">
-                <img class="juego" src="imagenes/triangle.jpg" />
-              </div>
-              <div class="card-info">
-                <h4>Triangle Strategy</h4>
-                <h5> 15€ </h5>
-                <div> Esta en buen estado solo lleva abierto 2 meses</div>
+                <h4>Monster Hunter Switch</h4>
+                <h5> 25€ </h5>
+                <div> No esta abierto</div>
                 <button class="button boton" onclick="location.href='login.html'">Contactar</button>
               </div>
             </div>
           </div>
         </div>
+
         <div class="row">
           <div class="col-md-4">
             <div class="producto">
               <div class="imagen">
-                <img class="juego" src="imagenes/triangle.jpg" />
+                <img class="juego" src="imagenes/tlo2.webp" alt="">
               </div>
               <div class="card-info">
-                <h4>Triangle Strategy</h4>
+                <h4>The last of us 2 ps5</h4>
                 <h5> 15€ </h5>
-                <div> Esta en buen estado solo lleva abierto 2 meses</div>
+                <div> No tiene spoilers de la serie</div>
                 <button class="button boton" onclick="location.href='login.html'">Contactar</button>
               </div>
             </div>
           </div>
+
           <div class="col-md-4">
             <div class="producto">
               <div class="imagen">
-                <img class="juego" src="imagenes/triangle.jpg" />
+                <img class="juego" src="imagenes/fire.jpg" alt="">
               </div>
               <div class="card-info">
-                <h4>Triangle Strategy</h4>
-                <h5> 15€ </h5>
-                <div> Esta en buen estado solo lleva abierto 2 meses</div>
+                <h4>Fire Emblem Engage</h4>
+                <h5> 40€ </h5>
+                <div> Lo compré ayer no me gusto y po reso lo vendo</div>
                 <button class="button boton" onclick="location.href='login.html'">Contactar</button>
               </div>
             </div>
           </div>
+
           <div class="col-md-4">
             <div class="producto">
               <div class="imagen">
-                <img class="juego" src="imagenes/triangle.jpg" />
+                <img class="juego" src="imagenes/pokemon.jpg" alt="">
               </div>
               <div class="card-info">
-                <h4>Triangle Strategy</h4>
-                <h5> 15€ </h5>
-                <div> Esta en buen estado solo lleva abierto 2 meses</div>
+                <h4>Pokemon Purpura</h4>
+                <h5> 30€ </h5>
+                <div>Mi hijo no lo usa</div>
                 <button class="button boton" onclick="location.href='login.html'">Contactar</button>
               </div>
             </div>
           </div>
+
         </div>
         <div class="row">
+
           <div class="col-md-4">
             <div class="producto">
               <div class="imagen">
-                <img class="juego" src="imagenes/triangle.jpg" />
+                <img class="juego" src="imagenes/sifu.jpg" alt="">
               </div>
               <div class="card-info">
-                <h4>Triangle Strategy</h4>
+                <h4>Sifu</h4>
                 <h5> 15€ </h5>
-                <div> Esta en buen estado solo lleva abierto 2 meses</div>
+                <div> Juegazo de pelea muy disfrutón</div>
                 <button class="button boton" onclick="location.href='login.html'">Contactar</button>
               </div>
             </div>
           </div>
+
           <div class="col-md-4">
             <div class="producto">
               <div class="imagen">
-                <img class="juego" src="imagenes/triangle.jpg" />
+                <img class="juego" src="imagenes/elden.jpg" alt="">
               </div>
               <div class="card-info">
-                <h4>Triangle Strategy</h4>
-                <h5> 15€ </h5>
-                <div> Esta en buen estado solo lleva abierto 2 meses</div>
+                <h4>Elden Ring</h4>
+                <h5> 27€ </h5>
+                <div> Va mejor de lo que esperaba en ps4 pero ya tengo el platino</div>
                 <button class="button boton" onclick="location.href='login.html'">Contactar</button>
               </div>
             </div>
           </div>
+
           <div class="col-md-4">
             <div class="producto">
               <div class="imagen">
-                <img class="juego" src="imagenes/triangle.jpg" />
+                <img class="juego" src="imagenes/ds3.jpg" alt="">
               </div>
               <div class="card-info">
-                <h4>Triangle Strategy</h4>
-                <h5> 15€ </h5>
-                <div> Esta en buen estado solo lleva abierto 2 meses</div>
+                <h4>Dark Soul 3</h4>
+                <h5> 5€ </h5>
+                <div> Ya no lo uso </div>
                 <button class="button boton" onclick="location.href='login.html'">Contactar</button>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
   </div>
 
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help the upcoming
+            programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code
+            wants to be simple. We will help programmers build up concepts in different programming languages that
+            include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+        </div>
 
 
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-        <svg class="bi" width="30" height="24">
-          <use xlink:href="#bootstrap"></use>
-        </svg>
-      </a>
-      <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+            <a href="#">Scanfcode</a>.
+          </p>
+        </div>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-            <use xlink:href="#twitter"></use>
-          </svg></a></li>
-      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-            <use xlink:href="#instagram"></use>
-          </svg></a></li>
-      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-            <use xlink:href="#facebook"></use>
-          </svg></a></li>
-    </ul>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

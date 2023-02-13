@@ -111,3 +111,7 @@
     text-decoration: underline;
     color: #ff6b01;
   }
+
+  .bodyfalso {
+    filter: blur(5px);
+  }
