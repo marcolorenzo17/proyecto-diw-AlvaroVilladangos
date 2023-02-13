@@ -8,13 +8,14 @@
 4. [RECURSOS](#id4)
 
 ## DESCRIPCIÓN<a name="id1"></a>
-[Incluye la descripción de tu proyecto.]
+La idea del proyecto es un wallapop especializado en videojuegos solo, en el que la gente sube a traves de su perfil productos
+y puede contacatar con otras personas para poder quedar y comparlos.
 
 ## PROTOTIPO<a name="id2"></a>
-[Incluye el enlace a tu prototipo realizado en Figma.]
+https://www.figma.com/file/1TNzzLylGt5aUp9zFrJACZ/Proyecto?node-id=0%3A1&t=MDwk3lunq27Qy16C-1
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
-[Listado de modificaciones realizadas debidadmente justificadas. ]
+El carrusel de anuncios no he podido implementarlo
 
 ## RECURSOS<a name="id4"></a>
 https://www.youtube.com/watch?v=eeHqZeJ9Vqc
@@ -22,6 +23,7 @@ https://www.youtube.com/watch?v=kuN5ALhmIuw
 https://www.youtube.com/watch?v=C_usYJnyJ28
 https://www.youtube.com/watch?v=4DR9Uvu1vnM
 https://codepen.io/scanfcode/pen/MEZPNd
+https://codepen.io/neilpomerleau/pen/wzxzQM 
 
 - Can I use?: https://caniuse.com/
 - Bootstrap: https://getbootstrap.com/

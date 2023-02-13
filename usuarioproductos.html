@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principal</title>
+    <title>Productos de Usuario</title>
     <link rel="stylesheet" href="/CSS/principal.css">
     <link rel="stylesheet" href="/CSS/login.css">
     <link rel="stylesheet" href="/CSS/producto.css">
+    <link rel="stylesheet" href="/CSS/comentarios.css">
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -20,6 +23,7 @@
     <nav class="navbar">
         <div>
             <img class="logo" src="/imagenes/logo2.svg" alt="">
+            alt=""
         </div>
         <script src="https://kit.fontawesome.com/d97b87339f.js" crossorigin="anonymous"></script>
 
@@ -27,32 +31,17 @@
             <input class="search-input" type="text" placeholder="Search something..">
             <button class="search-btn"><i class="fas fa-search"></i></button>
         </div>
-        <div class="action">
-            <div class="profile" onclick="menuToggle();">
-                <img src="imagenes/user.png" alt="">
-            </div>
-
-            <div class="menu">
-                <h3>
-                    User Account
-                </h3>
-                <ul>
-                    <li>
-                        <a href="usuarioproductos.html">Mi perfil</a>
-                    </li>
-                    <li>
-
-                        <a href="#">Ajustes</a>
-                    </li>
-                    <li>
-                        <a href="usuariocomments.html">Comments</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
+        <ul class="lista_nav">
+            <li class="item_lista">
+                <button class="button boton" onclick="location.href='login.html'">Login</button>
+            </li>
+            <li class="item_lista">
+                <button class="button boton" onclick="location.href='registro.html'">Registrar</button>
+            </li>
+        </ul>
 
     </nav>
+
 
     <div class="container-fluid">
         <div class="row">
@@ -88,6 +77,65 @@
             <div class="col-md-9">
                 <div class="row">
 
+                    <div class="col-md-9">
+                        <div class="comment-box">
+                            <div class="box-top">
+                                <div class="Profile">
+                                    <div class="profile-image">
+                                        <img src="imagenes/user.png" alt="">
+                                    </div>
+                                    <div class="Name">
+                                        <strong>Midinu Thiranjana</strong>
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="1">
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="2">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="3">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="4">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="stars" value="5">
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                    </div>
+                                    <button class="btn" onclick="location.href='usuarioproductos.html'"><i
+                                            class="fa fa-box ">Productos</i></button>
+                                    <button class="btn"><i class="fa fa-user">Contactar</i></button>
+                                    <button class="btn" onclick="location.href='usuariocomments.html'"><i
+                                            class="fa fa-comment">Comentarios</i></button>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="col-md-4">
                         <div class="producto">
                             <div class="imagen">
@@ -97,7 +145,6 @@
                                 <h4>Spiderman ps5</h4>
                                 <h5> 20€ </h5>
                                 <div> Mi hijo ya no usa el juego y quiero venderlo</div>
-                                <button class="button boton" onclick="location.href='login.html'">Contactar</button>
                             </div>
                         </div>
                     </div>
@@ -112,28 +159,10 @@
                                 <h4>Triangle Strategy</h4>
                                 <h5> 15€ </h5>
                                 <div> Esta en buen estado solo lleva abierto 2 meses</div>
-                                <button class="button boton" onclick="location.href='login.html'">Contactar</button>
                             </div>
                         </div>
                     </div>
 
-
-                    <div class="col-md-4">
-                        <div class="producto">
-                            <div class="imagen">
-                                <img class="juego" src="imagenes/monster.jpg" alt="">
-                            </div>
-                            <div class="card-info">
-                                <h4>Monster Hunter Switch</h4>
-                                <h5> 25€ </h5>
-                                <div> No esta abierto</div>
-                                <button class="button boton" onclick="location.href='login.html'">Contactar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
                     <div class="col-md-4">
                         <div class="producto">
                             <div class="imagen">
@@ -143,90 +172,13 @@
                                 <h4>The last of us 2 ps5</h4>
                                 <h5> 15€ </h5>
                                 <div> No tiene spoilers de la serie</div>
-                                <button class="button boton" onclick="location.href='login.html'">Contactar</button>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-4">
-                        <div class="producto">
-                            <div class="imagen">
-                                <img class="juego" src="imagenes/fire.jpg" alt="">
-                            </div>
-                            <div class="card-info">
-                                <h4>Fire Emblem Engage</h4>
-                                <h5> 40€ </h5>
-                                <div> Lo compré ayer no me gusto y po reso lo vendo</div>
-                                <button class="button boton" onclick="location.href='login.html'">Contactar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="producto">
-                            <div class="imagen">
-                                <img class="juego" src="imagenes/pokemon.jpg" alt="">
-                            </div>
-                            <div class="card-info">
-                                <h4>Pokemon Purpura</h4>
-                                <h5> 30€ </h5>
-                                <div>Mi hijo no lo usa</div>
-                                <button class="button boton" onclick="location.href='login.html'">Contactar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row">
-
-                    <div class="col-md-4">
-                        <div class="producto">
-                            <div class="imagen">
-                                <img class="juego" src="imagenes/sifu.jpg" alt="">
-                            </div>
-                            <div class="card-info">
-                                <h4>Sifu</h4>
-                                <h5> 15€ </h5>
-                                <div> Juegazo de pelea muy disfrutón</div>
-                                <button class="button boton" onclick="location.href='login.html'">Contactar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="producto">
-                            <div class="imagen">
-                                <img class="juego" src="imagenes/elden.jpg" alt="">
-                            </div>
-                            <div class="card-info">
-                                <h4>Elden Ring</h4>
-                                <h5> 27€ </h5>
-                                <div> Va mejor de lo que esperaba en ps4 pero ya tengo el platino</div>
-                                <button class="button boton" onclick="location.href='login.html'">Contactar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="producto">
-                            <div class="imagen">
-                                <img class="juego" src="imagenes/ds3.jpg" alt="">
-                            </div>
-                            <div class="card-info">
-                                <h4>Dark Soul 3</h4>
-                                <h5> 5€ </h5>
-                                <div> Ya no lo uso </div>
-                                <button class="button boton" onclick="location.href='login.html'">Contactar</button>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <footer class="site-footer">
         <div class="container">
@@ -279,14 +231,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-
-
-    <script>
-        function menuToggle() {
-            const toggleMenu = document.querySelector('.menu');
-            toggleMenu.classList.toggle('active')
-        }
-    </script>
 </body>
 
 </html>
