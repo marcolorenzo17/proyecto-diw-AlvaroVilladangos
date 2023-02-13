@@ -1,0 +1,113 @@
+/*login*/
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgb(0, 0, .3);
+  
+  }
+  
+  .login h1{
+    color: #ff6b01;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 20px 0 ;
+    border-bottom: 1px solid silver;
+  }
+  
+  .login form{
+    padding: 0 40px;
+    box-sizing: border-box;
+  } 
+  
+  form .txt{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+  }
+  
+  .txt input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  .txt label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .4s;
+  }
+  
+  .txt span::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #ff6b01;
+    transition: .4s;
+  }
+  
+  .txt input:focus ~ label,
+  .txt input:valid ~ label{
+    top: -5px;
+    color: #ff6b01;
+  }
+  
+  .txt input:focus ~ span::before,
+  .txt input:valid ~ span::before{
+    width: 100%;
+  }
+  
+  .pass{
+    margin: -5px 0 20px 5px;
+    color: orange;
+    cursor: pointer;
+    transition: .4s;
+  }
+  
+  .pass:hover{
+    text-decoration: underline;
+    color: #ff6b01;
+  }
+  
+  .login button{
+    width: 100%;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color:orange ;
+    transition: .4s;
+  }
+  
+  .login button:hover{
+    background-color: #ff6b01;
+  }
+  
+  .login a{
+    color: orange;
+    transition: .4s;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .login a:hover{
+    text-decoration: underline;
+    color: #ff6b01;
+  }

@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica;
+}
+
+.navbar {
+  background-color: #ff6b01;
+  color: #ff6b01;
+  display: flex;
+
+}
+
+.logo {
+  filter: unset;
+  height: 160px;
+}
+
+
+button {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  border: none;
+  padding: 6px;
+  border-collapse: separate;
+}
+
+button:hover {
+  transition: .3;
+  transform: scale(1.1);
+}
+
+.boton {
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.lista_nav {
+  list-style: none;
+}
+
+.lista_nav .item_lista {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+.search-box {
+  width: 60%;
+  position: relative;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  border-radius: 8px;
+}
+
+.search-input {
+  width: 70%;
+  font-family: Helvetica;
+  font-size: 16px;
+  padding: 15px 45px 15px 15px;
+  background-color: white;
+  color: #ff6b01;
+  border-radius: 6px;
+  border-color: #ff6b01;
+  transition: all .4s;
+}
+
+.search-input:focus {
+  border: none;
+  outline: none;
+  box-shadow:#ff6b01;
+
+}
+
+.search-btn {
+  background-color: transparent;
+  font-size: 18px;
+  padding: 6px 9px;
+  margin-left: -45px;
+  border: none;
+  color: orange;
+  transition: all .4s;
+  z-index: 10;
+}
+
+.search-btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  color: #ff6b01;
+}
+
+.search-btn:focus {
+  outline: none;
+  color: #ff6b01;
+}
+
+/*sidebox*/
+
+.sidebar {
+  margin-top: 30%;
+}
+
+.sidebar h3 {
+  font-size:35px;
+  color: #ff6b01;
+  font-weight: bold;
+}
+
+input[type='checkbox'] {
+  accent-color: #ff6b01;
+  color: white;
+}
+.checkbox-wrapper{
+  width: 55%;
+}
+.checkbox-wrapper button{
+  background-color: #ff6b01;
+}
+
+.checkbox-wrapper label{
+  font-weight:bolder;
+}
+
+
+/*PROFILE*/
+
+.icons-size{
+  color: #333;
+  font-size: 14px;
+}
+.action{
+  position: absolute;
+  z-index: 1111;
+  right: 30px;
+  top:20px
+}
+.action .profile{
+  border-radius: 50%;
+  cursor: pointer;
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+  width: 60px;
+}
+.action .profile img{
+
+  width: 100%;
+  top:0;
+  position: absolute;
+  object-fit: cover;
+  left: 0;
+  height: 100%;
+}
+.action .menu{
+  background-color:#FFF;
+  box-sizing:0 5px 25px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 5px 10px;
+  position: absolute;
+  right: -10px;
+  width: 200px;
+  transition: 0.5s;
+  top: 120px;
+  visibility: hidden;
+  opacity: 0;
+}
+.action .menu.active{
+  opacity: 1;
+  top: 80px;
+  visibility: visible;
+}
+.action .menu::before{
+  background-color:#fff;
+  content: '';
+  height: 20px;
+  position: absolute;
+  right: 30px;
+  transform:rotate(45deg);
+  top:-5px;
+  width: 20px;
+}
+.action .menu h3{
+  color: #555;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3em;
+  padding: 20px 0px;
+  text-align: left;
+  width: 100%;
+}
+.action .menu h3 div{
+  color: #818181;
+  font-size: 14px;
+  font-weight: 400;
+}
+.action .menu ul li{
+  align-items: center;
+  border-top:1px solid rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  padding: 10px 0px;
+}
+.action .menu ul li img{
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition:0.5s
+}
+.action .menu ul li a{
+  display: inline-block;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.action .menu ul li:hover img{
+  opacity: 1;
+}
+.action .menu ul li:hover a{
+  color:#ff6b01;
+}
+
+.action .menu ul li:hover {
+  color:#ff6b01;
+}
